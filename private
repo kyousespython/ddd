@@ -77,20 +77,21 @@ UniversalSection1:NewToggle("Autofarm GUI", "Opens autofarm script.", function(s
     end
 end)
 
+UniversalSection1:NewToggle("Clicker Hub (not recommended)", "Opens script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    else
+        
+    end
+end)
 
-local UniversalTab = Window:NewTab("Soon")
-local UniversalSection1 = UniversalTab:NewSection("Nigga")
-
-
-
-
-local UniversalTab = Window:NewTab("Soon")
-local UniversalSection1 = UniversalTab:NewSection("Nigga")
-
-
-
-
-
+UniversalSection1:NewToggle("Kyo Private (very recommended)", "Opens kyo script.", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/kyos/main/clicker-simulator'))()
+    else
+        
+    end
+end)
 
 
 
